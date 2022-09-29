@@ -24,8 +24,8 @@ class CreateTrainsTable extends Migration
             $table->date('data_partenza');
             $table->string('codice_treno', 255);
             $table->string('numero_carrozze', 2);
-            $table->boolean('confirmed');
-            $table->boolean('confirmed');
+            $table->boolean('in_orario');
+            $table->boolean('cancellato');
 
             $table->timestamps();
         });
