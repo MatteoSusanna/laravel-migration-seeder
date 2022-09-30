@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index(){
 
-        $train = Train::where('data_partenza', '2022-09-29')->get();
+        $train = Train::where('data_partenza', date('Y-m-d'))->get();
 
         return view('homepage', ['trains'=> $train]);
     }
